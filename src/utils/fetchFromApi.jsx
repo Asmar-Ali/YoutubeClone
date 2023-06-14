@@ -11,6 +11,8 @@ const options = {
     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
   },
 };
+
+
 export const fetchFromApi = async (url) => {
     console.log(url)
   const { data } = await axios.get(`${BASE_URL}/${url}`, options);
